@@ -5,5 +5,5 @@
 @endsection
 
 @section('content')
-        @include('manuales.laravel.manual')
+        @include('manuales.conectemos.manual')
 @endsection

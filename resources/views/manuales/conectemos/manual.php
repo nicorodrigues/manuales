@@ -1,6 +1,4 @@
-﻿<?php require_once '../../resources/header.php'; ?>
-
-<div class="container"><h2 id="subir-laravel-a-conectemos"><strong>Subir Laravel a Conectemos</strong></h2>
+<h2 id="subir-laravel-a-conectemos"><strong>Subir Laravel a Conectemos</strong></h2>
 
 
 
@@ -118,5 +116,4 @@ DB_DATABASE=alquemadrugadiosloayuda <br>
 DB_USERNAME=nrodrigues <br>
 DB_PASSWORD=rawrrrrr</p>
 
-<p>Guardamos y estamos listos para darle atomoooooooooooosssssss!!!</p></div></body>
-<?php require_once '../../resources/footer.php'; ?>
+<p>Guardamos y estamos listos para darle atomoooooooooooosssssss!!!</p></div>
