@@ -10,9 +10,9 @@
 
 @section('content')
 
-    <div class="video">        
+    {{-- <div class="video">
         <div class="plyr" data-type="youtube" data-video-id="6wIYUy0ZnjE"></div>
-    </div>
+    </div> --}}
 
     @if (@session('forbidden'))
         <script src='/js/sweetalert2.js'></script>
