@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400')
+
+// COLORES
+$blue-main: #2196F3
+$blue-dark1: #1C8FEB
+$blue-light1: #44ABFD
+$blue-light2: #33A3FC
+$grey-main: #E6EBF1
+$grey-dark1: #9199A3
+$grey-dark2: #74838B
+$grey-light1: #F4FAFE
+$red-error: #FF4A4A
+
+// FONTS
+$font-main: 'Lato'
+
+
+// GENERALES
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html, body
+    height: 100%
+    width: 100%
+
+
+.full-height
+    height: 100%
+
+.flex-center
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-flow: row wrap
+
+// ESPECÍFICAS
+
+.navbar-top
+    position: fixed
+    top: 0
+    left: 0
+    height: 50px
+    width: 100%
+    align-self: baseline
+    background-color: $blue-dark1
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    justify-content: space-between
+    align-content: center
+
+    .nav-user
+        width: 190px
+
+        p
+            display: flex
+            justify-content: center
+            align-items: center
+            font-family: $font-main
+            color: white
+            padding: 0 15px
+            height: 50px
+            cursor: pointer
+            margin: 0
+
+            &:hover
+                background-color: $blue-light2
+
+        .nav-user-submenu
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top: 50px
+            width: inherit
+            height: 0
+            overflow: hidden
+            transition: all 0.1s ease-in-out
+
+            a
+                padding: 10px 72px
+                background-color: $blue-light2
+                color: white
+                font-family: $font-main
+                text-decoration: none
+
+                &:hover
+                    background-color: $blue-light1
+
+
+    .nav-hamburg
+        height: 23px
+
+        svg
+            color: white
+            width: 25px
+            height: 20px
+            margin-left: 20px
+            cursor: pointer
+
+    .links
+        margin-right: 15px
+        a
+            margin-left: 12px
+            text-decoration: none
+            color: white
+            font-family: $font-main
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus
+    background-color: #FFFFFF !important
+    color: black !important
+    -webkit-box-shadow: 0 0 0 1000px white inset !important
+    -webkit-text-fill-color: black !important
+
+.links-derecha
+    justify-content: flex-end
+
+.sidebar
+    position: fixed
+    top: 50px
+    left: 0
+    height: 100%
+    width: 0
+    background-color: $grey-main
+    overflow: hidden
+    transition: all 0.4s ease-in-out
+
+    .sidebar-item
+        border-bottom: 1px solid rgba(0,0,0,.1)
+
+        a
+            padding: 15px 20px
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            font-family: $font-main
+            font-size: 14px
+            text-decoration: none
+            color: $grey-dark2
+            white-space: pre
+
+            &:hover
+                background-color: white
+                border-left: 4px solid $blue-light2
+                padding-left: 16px
+
+            svg
+                width: 30px
+                height: 30px
+
+            span
+                margin-left: 5px
+        &.actual
+            a
+                background-color: white
+                border-left: 4px solid $blue-light2
+                padding-left: 16px
+
+        .subactual
+            a
+                background-color: $blue-light2
+                color: white
+
+        ul
+            margin-bottom: 0
+            height: 0px
+            overflow: hidden
+            transition: all 0.4s ease-in-out
+
+            a
+                padding: 10px 20px
+                background-color: $grey-light1
+
+                &:hover
+                    background-color: $blue-light2
+                    color: white
+                    border-left: 4px solid $blue-light2
+                    padding-left: 16px
+
+
+.content
+    padding-top: 50px
+    width: 100%
+    height: 100%
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    // align-items: center
+    align-content: center
+
+.container
+    width: 100%
+    height: 100%
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    align-items: center
+    align-content: center
+    background-color: $blue-dark1
+
+.manual
+    // overflow: auto
+    margin: 0 auto
+    width: 95%
+    max-width: 1000px
+
+    ul
+        margin-left: 20px
+
+form
+    background-color: white
+    font-family: $font-main
+    padding: 30px
+    width: 90%
+    max-width: 400px
+
+    h1
+        text-align: center
+        margin-bottom: 20px
+
+    .form-input
+        margin-top: 20px
+
+        label
+            font-size: 14px
+
+        &.has-error
+
+            input
+                border-color: $red-error
+
+            label
+                color: $red-error
+
+        .help-block
+            color: $red-error
+            font-weight: 400
+            font-size: 14px
+
+    input
+        font-size: 16px
+        width: 95%
+        padding: 12px 20px 8px 0
+        border: 0
+        border-bottom: 2px solid $grey-main
+        transition: all 0.4s ease-in-out
+
+        &:focus
+            outline: 0
+            border-bottom: 2px solid $blue-main
+
+    .checkbox
+        display: flex
+        align-items: center
+
+    input[type="checkbox"]
+        width: auto
+
+button
+    height: 55px
+    padding: 0 75px
+    background-color: $blue-main
+    font-family: $font-main
+    color: white
+    border-radius: 3px
+    border: 0
+    font-size: 14px
+    cursor: pointer
+    box-shadow: 0 0 15px rgba(0,0,0,.2)
+    font-weight: 500
+
+    &:hover
+        background-color: $blue-dark1
+
+.button-login
+    width: 100%
+
+.forbidden
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: row wrap
+    align-content: center
+    font-family: $font-main
+
+    form
+        text-align: center
+
+.forbidden-text
+    text-align: center
+    color: $grey-dark2
+
+    .fa-ban
+        font-size: 100px
+
+.video
+    width: 1280px
+    height: 720px
+
+@media screen and (min-width: 768px)
+    .navbar-top
+        justify-content: flex-end
+
+        .nav-hamburg
+            display: none
+
+    .sidebar
+        width: 170px
+
+    .manual
+        padding-left: 100px
+        width: 80%
+        max-width: 1200px

@@ -1,0 +1,430 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.navbar-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  background-color: #1C8FEB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.navbar-top .nav-user {
+  width: 190px;
+}
+
+.navbar-top .nav-user p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato";
+  color: white;
+  padding: 0 15px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.navbar-top .nav-user p:hover {
+  background-color: #33A3FC;
+}
+
+.navbar-top .nav-user .nav-user-submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50px;
+  width: inherit;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.navbar-top .nav-user .nav-user-submenu a {
+  padding: 10px 72px;
+  background-color: #33A3FC;
+  color: white;
+  font-family: "Lato";
+  text-decoration: none;
+}
+
+.navbar-top .nav-user .nav-user-submenu a:hover {
+  background-color: #44ABFD;
+}
+
+.navbar-top .nav-hamburg {
+  height: 23px;
+}
+
+.navbar-top .nav-hamburg svg {
+  color: white;
+  width: 25px;
+  height: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.navbar-top .links {
+  margin-right: 15px;
+}
+
+.navbar-top .links a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: white;
+  font-family: "Lato";
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+  background-color: #FFFFFF !important;
+  color: black !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+.links-derecha {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #E6EBF1;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar .sidebar-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .sidebar-item a {
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato";
+  font-size: 14px;
+  text-decoration: none;
+  color: #74838B;
+  white-space: pre;
+}
+
+.sidebar .sidebar-item a:hover {
+  background-color: white;
+  border-left: 4px solid #33A3FC;
+  padding-left: 16px;
+}
+
+.sidebar .sidebar-item a svg {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar .sidebar-item a span {
+  margin-left: 5px;
+}
+
+.sidebar .sidebar-item.actual a {
+  background-color: white;
+  border-left: 4px solid #33A3FC;
+  padding-left: 16px;
+}
+
+.sidebar .sidebar-item .subactual a {
+  background-color: #33A3FC;
+  color: white;
+}
+
+.sidebar .sidebar-item ul {
+  margin-bottom: 0;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar .sidebar-item ul a {
+  padding: 10px 20px;
+  background-color: #F4FAFE;
+}
+
+.sidebar .sidebar-item ul a:hover {
+  background-color: #33A3FC;
+  color: white;
+  border-left: 4px solid #33A3FC;
+  padding-left: 16px;
+}
+
+.content {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #1C8FEB;
+}
+
+.manual {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1000px;
+}
+
+.manual ul {
+  margin-left: 20px;
+}
+
+form {
+  background-color: white;
+  font-family: "Lato";
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form .form-input {
+  margin-top: 20px;
+}
+
+form .form-input label {
+  font-size: 14px;
+}
+
+form .form-input.has-error input {
+  border-color: #FF4A4A;
+}
+
+form .form-input.has-error label {
+  color: #FF4A4A;
+}
+
+form .form-input .help-block {
+  color: #FF4A4A;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+form input {
+  font-size: 16px;
+  width: 95%;
+  padding: 12px 20px 8px 0;
+  border: 0;
+  border-bottom: 2px solid #E6EBF1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+form input:focus {
+  outline: 0;
+  border-bottom: 2px solid #2196F3;
+}
+
+form .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  height: 55px;
+  padding: 0 75px;
+  background-color: #2196F3;
+  font-family: "Lato";
+  color: white;
+  border-radius: 3px;
+  border: 0;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #1C8FEB;
+}
+
+.button-login {
+  width: 100%;
+}
+
+.forbidden {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: "Lato";
+}
+
+.forbidden form {
+  text-align: center;
+}
+
+.forbidden-text {
+  text-align: center;
+  color: #74838B;
+}
+
+.forbidden-text .fa-ban {
+  font-size: 100px;
+}
+
+.video {
+  width: 1280px;
+  height: 720px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-top {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .navbar-top .nav-hamburg {
+    display: none;
+  }
+
+  .sidebar {
+    width: 170px;
+  }
+
+  .manual {
+    padding-left: 100px;
+    width: 80%;
+    max-width: 1200px;
+  }
+}
+
