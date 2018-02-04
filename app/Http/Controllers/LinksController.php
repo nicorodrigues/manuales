@@ -40,6 +40,11 @@ class LinksController extends Controller
         return redirect('/manuales/javascript/clase01');
     }
 
+    public function conectemos()
+    {
+        return view('manuales.conectemos.index');
+    }
+
     public function forbiddenPage()
     {
         return view('forbidden');

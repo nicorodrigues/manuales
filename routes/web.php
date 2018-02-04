@@ -18,6 +18,7 @@ Route::get('/manuales/laravel', 'LinksController@laravel')->middleware('forbidde
 Route::get('/manuales/javascript', 'LinksController@javascript')->middleware('forbidden');
 
 Route::get('/manuales/javascript/{clase}', 'LinksController@javascript')->middleware('forbidden');
+Route::get('/manuales/conectemos', 'LinksController@conectemos')->middleware('forbidden');
 
 Route::get('/forbidden', 'LinksController@forbiddenPage');
 
