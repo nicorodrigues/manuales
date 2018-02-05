@@ -68,4 +68,18 @@ class LinksController extends Controller
 
         return redirect('/forbidden')->with('forbidden', 2);
     }
+
+    public function admin()
+    {
+        $users = \App\User::all();
+        $manuals = \App\Manual::all();
+        $userManual = \App\UserManual::all();
+
+        $parameters = [
+            'users' => $users,
+            'manuals' => $manuals,
+            'userManual' => $userManual
+        ];
+        return view('admin', $parameters);
+    }
 }

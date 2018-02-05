@@ -20,12 +20,16 @@ Route::get('/manuales/javascript', 'LinksController@javascript')->middleware('fo
 Route::get('/manuales/javascript/{clase}', 'LinksController@javascript')->middleware('forbidden');
 Route::get('/manuales/conectemos', 'LinksController@conectemos')->middleware('forbidden');
 
-Route::get('/forbidden', 'LinksController@forbiddenPage');
-
+Route::get('/forbidden', 'LinksController@forbiddenPage')->middleware('auth');
 Route::post('/forbidden', 'LinksController@forbidden');
+
+Route::get('/admin', 'LinksController@admin')->middleware('isAdmin');
 
 
 Route::get('/test', function() {
     return view('test');
 });
+
+Route::post('/permission', 'PermissionController@togglePermission');
+
 Auth::routes();

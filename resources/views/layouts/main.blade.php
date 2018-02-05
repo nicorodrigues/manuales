@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="csrf-token" content="{{csrf_token()}}">
     <title>@yield('title')</title>
     @yield('css')
     <link rel="stylesheet" href="/css/main.css">
@@ -89,7 +89,7 @@
                         </li>
                         @if (Auth::check() && Auth::user()->email === 'contacto@nicorodrigues.com.ar')
                             <li class="sidebar-item">
-                                <a href="#">
+                                <a href="/admin">
                                     <i class="fas fa-unlock-alt"></i>
                                     <span>Admin Panel</span>
                                 </a>
