@@ -1,5 +1,3 @@
-<div class="manual">
-
 <h2 id="subir-laravel-a-conectemos"><strong>Subir Laravel a Conectemos</strong></h2>
 
 
@@ -119,4 +117,3 @@ DB_USERNAME=nrodrigues <br>
 DB_PASSWORD=rawrrrrr</p>
 
 <p>Guardamos y estamos listos para darle atomoooooooooooosssssss!!!</p></div>
-</div>
