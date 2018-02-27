@@ -5,5 +5,7 @@
 @endsection
 
 @section('content')
+    <div class="manual">
         @include('manuales.conectemos.manual')
+    </div>
 @endsection

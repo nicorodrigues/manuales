@@ -23,15 +23,6 @@ window.addEventListener('load', function() {
                     }
                 }
             }
-        )
-        .catch(
-            () => {
-                if (elem.checked) {
-                    elem.checked = false;
-                } else {
-                    elem.checked = true;
-                }
-            }
         );
     }
 });

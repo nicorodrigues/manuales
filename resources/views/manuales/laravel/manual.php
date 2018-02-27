@@ -1,4 +1,3 @@
-<div class="manual">
 <h2 id="creamos-un-nuevo-proyecto"><strong>Creamos un nuevo proyecto</strong></h2>
 
 <p>Arranquemos poniendo en la terminal, en cualquier carpeta que querramos, el siguiente comando:</p>
@@ -2233,4 +2232,3 @@ Para empezar, si quisieramos guardar cosas en Laravel, lo recomendable es correr
 <p>Continuará…</p>
 
 <p>┻━┻︵  (°□°)/ ︵ ┻━┻</p>
-</div>
