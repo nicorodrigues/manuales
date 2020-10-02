@@ -9,22 +9,15 @@
 @endsection
 
 @section('content')
-
-    {{-- <div class="video">
-        <div class="plyr" data-type="youtube" data-video-id="6wIYUy0ZnjE"></div>
-    </div> --}}
-
     @if (@session('forbidden'))
         <script src='/js/sweetalert2.js'></script>
-
         @if (@session('forbidden') === 1)
-
             <script type="text/javascript">
-            swal('Te habilito ni bien pueda !');
+                swal('Te habilito ni bien pueda !');
             </script>
         @elseif (@session('forbidden') === 2)
             <script type="text/javascript">
-            swal('Tranqui, ya te voy a habilitar !');
+                swal('Tranqui, ya te voy a habilitar !');
             </script>
         @endif
     @endif
